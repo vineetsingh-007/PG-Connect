@@ -47,7 +47,7 @@ export default function Home() {
       <main className="flex-1">
         <section className="relative h-[60vh] flex items-center justify-center text-center text-white">
           <Image
-            src="https://picsum.photos/seed/home-hero/1800/1200"
+            src="https://picsum.photos/seed/students-hero/1800/1200"
             alt="Students studying together"
             data-ai-hint="students studying"
             fill
