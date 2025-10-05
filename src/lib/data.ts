@@ -72,7 +72,7 @@ export const listings: Listing[] = [
     address: '101, Loni Kalbhor, Pune',
     price: 9500,
     amenities: ['Wi-Fi', 'Laundry', 'Food'],
-    imageUrl: 'https://images.unsplash.com/photo-1605283176568-9b41fde36122?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwaG91c2luZyUyMGV4dGVyaW9yfGVufDB8fHx8MTc1OTcxMTE5Mnww&ixlib=rb-4.1.0&q=80&w=1080',
+    imageUrl: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBleHRlcmlvcnxlbnwwfHx8fDE3NTk3MDQ5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080',
     description: 'Affordable student accommodation with single and double sharing rooms, Wi-Fi, laundry, and mess facilities. Located 1.2 km from MIT-ADT campus.',
     ownerId: 'owner2',
     rating: 4.1,
