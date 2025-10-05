@@ -1,0 +1,142 @@
+import type { Listing, Room, Booking, Review, Conversation, College } from './types';
+
+export const colleges: College[] = [
+  { id: 'clg1', name: 'IIT Bombay', lat: 19.1334, lng: 72.9154 },
+  { id: 'clg2', name: 'Delhi University', lat: 28.686273, lng: 77.221085 },
+  { id: 'clg3', name: 'IIT Madras', lat: 12.9915, lng: 80.2335 },
+  { id: 'clg4', name: 'BITS Pilani', lat: 28.3588, lng: 75.5873 },
+];
+
+export const listings: Listing[] = [
+  {
+    id: '1',
+    name: 'Sunshine Student PG',
+    address: '123, Tech Avenue, Powai, Mumbai',
+    price: 15000,
+    amenities: ['Wi-Fi', 'AC', 'Laundry', 'Food'],
+    imageUrl: 'https://picsum.photos/seed/listing1/800/600',
+    description: 'A modern and comfortable PG for students with all necessary amenities. Close to major tech parks and colleges.',
+    ownerId: 'owner1',
+    rating: 4.5,
+    nearbyCollegeIds: ['clg1'],
+    lat: 19.1350,
+    lng: 72.9160,
+  },
+  {
+    id: '2',
+    name: 'Scholars Abode',
+    address: '45, College Road, Nungambakkam, Chennai',
+    price: 12000,
+    amenities: ['Wi-Fi', 'Food', 'Housekeeping'],
+    imageUrl: 'https://picsum.photos/seed/listing2/800/600',
+    description: 'A quiet and studious environment perfect for scholars. Excellent food and clean rooms.',
+    ownerId: 'owner2',
+    rating: 4.2,
+    nearbyCollegeIds: ['clg3'],
+    lat: 13.0604,
+    lng: 80.2417,
+  },
+  {
+    id: '3',
+    name: 'Campus Corner',
+    address: '78, University Street, Delhi',
+    price: 13500,
+    amenities: ['Wi-Fi', 'AC', 'Gym'],
+    imageUrl: 'https://picsum.photos/seed/listing3/800/600',
+    description: 'Located right next to the university campus. Features a fully equipped gym.',
+    ownerId: 'owner1',
+    rating: 4.8,
+    nearbyCollegeIds: ['clg2'],
+    lat: 28.6880,
+    lng: 77.2200,
+  },
+  {
+    id: '4',
+    name: 'Pilani Nivas',
+    address: '90, Vidya Vihar, Pilani',
+    price: 10000,
+    amenities: ['Wi-Fi', 'Cooler', 'Food'],
+    imageUrl: 'https://picsum.photos/seed/listing4/800/600',
+    description: 'Affordable and comfortable living for students of BITS Pilani. Homely food included.',
+    ownerId: 'owner3',
+    rating: 4.0,
+    nearbyCollegeIds: ['clg4'],
+    lat: 28.3600,
+    lng: 75.5880,
+  },
+  {
+    id: '5',
+    name: 'Lakeview Hostel',
+    address: '21, Powai Lake Rd, Mumbai',
+    price: 18000,
+    amenities: ['Wi-Fi', 'AC', 'Laundry', 'Food', 'Gym'],
+    imageUrl: 'https://picsum.photos/seed/listing5/800/600',
+    description: 'Premium PG with a view of Powai Lake. Includes access to a modern gym and recreational facilities.',
+    ownerId: 'owner2',
+    rating: 4.9,
+    nearbyCollegeIds: ['clg1'],
+    lat: 19.1250,
+    lng: 72.9080,
+  },
+  {
+    id: '6',
+    name: 'The Student Hub',
+    address: '56, Adyar, Chennai',
+    price: 11000,
+    amenities: ['Wi-Fi', 'Food'],
+    imageUrl: 'https://picsum.photos/seed/listing6/800/600',
+    description: 'A lively and social PG for students. Great community and regular events.',
+    ownerId: 'owner3',
+    rating: 4.3,
+    nearbyCollegeIds: ['clg3'],
+    lat: 13.0064,
+    lng: 80.2572,
+  },
+];
+
+export const rooms: Room[] = [
+  { id: 'r1', listingId: '1', roomNumber: '101', isAvailable: true, unavailableDates: [] },
+  { id: 'r2', listingId: '1', roomNumber: '102', isAvailable: false, unavailableDates: [new Date('2024-08-10'), new Date('2024-08-11')] },
+  { id: 'r3', listingId: '2', roomNumber: 'A1', isAvailable: true, unavailableDates: [] },
+];
+
+export const bookings: Booking[] = [
+  { id: 'b1', listingId: '1', roomId: 'r2', studentId: 'stu1', studentName: 'Rohan Sharma', checkIn: new Date('2024-08-01'), checkOut: new Date('2025-05-31'), totalPaid: 150000, status: 'Confirmed' },
+  { id: 'b2', listingId: '3', roomId: 'c101', studentId: 'stu2', studentName: 'Priya Singh', checkIn: new Date('2024-07-20'), checkOut: new Date('2025-05-20'), totalPaid: 13500, status: 'Pending' },
+  { id: 'b3', listingId: '2', roomId: 'A1', studentId: 'stu3', studentName: 'Anjali Verma', checkIn: new Date('2024-09-01'), checkOut: new Date('2025-06-30'), totalPaid: 12000, status: 'Confirmed' },
+];
+
+export const reviews: Review[] = [
+  { id: 'rev1', listingId: '1', author: 'Aarav Patel', avatarUrl: 'https://picsum.photos/seed/avatar1/40/40', rating: 5, comment: 'Amazing place! Very clean and the owner is very helpful. Food is also great.', date: '2024-05-20' },
+  { id: 'rev2', listingId: '1', author: 'Sneha Reddy', avatarUrl: 'https://picsum.photos/seed/avatar2/40/40', rating: 4, comment: 'Good location and amenities. Wi-Fi can be a bit slow at times.', date: '2024-04-15' },
+  { id: 'rev3', listingId: '3', author: 'Vikram Kumar', avatarUrl: 'https://picsum.photos/seed/avatar3/40/40', rating: 5, comment: 'Best PG near the campus. The gym is a huge plus!', date: '2024-06-01' },
+];
+
+export const conversations: Conversation[] = [
+  {
+    id: 'conv1',
+    userName: 'Kavya Mishra',
+    userAvatar: 'https://picsum.photos/seed/conv1/40/40',
+    listingName: 'Sunshine Student PG',
+    lastMessage: 'Is the room still available?',
+    lastMessageTimestamp: new Date(new Date().setDate(new Date().getDate() - 1)),
+    messages: [
+      { id: 'm1', text: 'Hello, I am interested in the single room at Sunshine Student PG.', sender: 'user', timestamp: new Date(new Date().setDate(new Date().getDate() - 1)) },
+      { id: 'm2', text: 'Hi Kavya, which room are you referring to?', sender: 'owner', timestamp: new Date(new Date().setDate(new Date().getDate() - 1)) },
+      { id: 'm3', text: 'The one listed for 15,000. Is it still available for booking?', sender: 'user', timestamp: new Date(new Date().setDate(new Date().getDate() - 1)) },
+    ],
+  },
+  {
+    id: 'conv2',
+    userName: 'Arjun Desai',
+    userAvatar: 'https://picsum.photos/seed/conv2/40/40',
+    listingName: 'Campus Corner',
+    lastMessage: 'Thank you!',
+    lastMessageTimestamp: new Date(new Date().setDate(new Date().getDate() - 2)),
+    messages: [
+      { id: 'm4', text: 'I have completed the payment.', sender: 'user', timestamp: new Date(new Date().setDate(new Date().getDate() - 2)) },
+      { id: 'm5', text: 'Great, we have received it. Your booking is confirmed.', sender: 'owner', timestamp: new Date(new Date().setDate(new Date().getDate() - 2)) },
+      { id: 'm6', text: 'Thank you!', sender: 'user', timestamp: new Date(new Date().setDate(new Date().getDate() - 2)) },
+    ],
+  },
+];
