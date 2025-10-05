@@ -4,7 +4,11 @@ import { PlaceHolderImages } from './placeholder-images';
 const getImage = (imageHint: string) => {
   const image = PlaceHolderImages.find(img => img.imageHint.includes(imageHint));
   // Fallback to a random image from the list if the hint is not found
-  return image ? image.imageUrl : PlaceHolderImages[Math.floor(Math.random() * PlaceHolderImages.length)].imageUrl;
+  if (image) {
+    return image.imageUrl;
+  }
+  // If no specific image is found, return a random one from the list.
+  return PlaceHolderImages[Math.floor(Math.random() * PlaceHolderImages.length)].imageUrl;
 }
 
 export const colleges: College[] = [
@@ -50,7 +54,7 @@ export const listings: Listing[] = [
     address: '78, University Street, Delhi',
     price: 13500,
     amenities: ['Wi-Fi', 'AC', 'Gym'],
-    imageUrl: getImage('single room'),
+    imageUrl: getImage('common area'),
     description: 'Located right next to the university campus. Features a fully equipped gym.',
     ownerId: 'owner1',
     rating: 4.8,
@@ -78,7 +82,7 @@ export const listings: Listing[] = [
     address: '21, Powai Lake Rd, Mumbai',
     price: 18000,
     amenities: ['Wi-Fi', 'AC', 'Laundry', 'Food', 'Gym'],
-    imageUrl: getImage('student room'),
+    imageUrl: getImage('dorm room'),
     description: 'Premium PG with a view of Powai Lake. Includes access to a modern gym and recreational facilities.',
     ownerId: 'owner2',
     rating: 4.9,
