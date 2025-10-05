@@ -1,16 +1,6 @@
 import type { Listing, Room, Booking, Review, Conversation, College } from './types';
 import { PlaceHolderImages } from './placeholder-images';
 
-function getImage(hint: string) {
-    const image = PlaceHolderImages.find(img => img.imageHint.includes(hint));
-    if (image) {
-        return image.imageUrl;
-    }
-    // Fallback to a random image if no specific hint is found
-    const randomIndex = Math.floor(Math.random() * PlaceHolderImages.length);
-    return PlaceHolderImages[randomIndex].imageUrl;
-}
-
 export const colleges: College[] = [
   { id: 'clg1', name: 'IIT Bombay', lat: 19.1334, lng: 72.9154 },
   { id: 'clg2', name: 'Delhi University', lat: 28.686273, lng: 77.221085 },
@@ -76,6 +66,34 @@ export const listings: Listing[] = [
     lat: 28.5535,
     lng: 77.1942,
   },
+  {
+    id: '8',
+    name: 'Ambarnath PG',
+    address: '101, Loni Kalbhor, Pune',
+    price: 9500,
+    amenities: ['Wi-Fi', 'Laundry', 'Food'],
+    imageUrl: 'https://images.unsplash.com/photo-1616627781431-d85387063a13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaW5nbGUlMjBiZWQlMjByb29tfGVufDB8fHx8MTc1OTcxMTIyMHww&ixlib=rb-4.1.0&q=80&w=1080',
+    description: 'Affordable student accommodation with single and double sharing rooms, Wi-Fi, laundry, and mess facilities. Located 1.2 km from MIT-ADT campus.',
+    ownerId: 'owner2',
+    rating: 4.1,
+    nearbyCollegeIds: ['clg5'],
+    lat: 18.4684,
+    lng: 73.9522,
+  },
+  {
+    id: '9',
+    name: 'Homies Living',
+    address: '22, Rajbaug, Loni Kalbhor, Pune',
+    price: 14000,
+    amenities: ['Wi-Fi', 'Housekeeping', 'Gym'],
+    imageUrl: 'https://images.unsplash.com/photo-1618221528157-37a5955a5b6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb3JtJTIwY29tbW9uJTIwYXJlYXxlbnwwfHx8fDE3NTk3MTEwNTN8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    description: 'Premium co-living space offering furnished rooms, study desks, housekeeping, and gym access. Located 800 meters from MIT-ADT campus.',
+    ownerId: 'owner3',
+    rating: 4.6,
+    nearbyCollegeIds: ['clg5'],
+    lat: 18.4621,
+    lng: 73.9410,
+  }
 ];
 
 export const rooms: Room[] = [
