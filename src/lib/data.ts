@@ -1,15 +1,15 @@
 import type { Listing, Room, Booking, Review, Conversation, College } from './types';
 import { PlaceHolderImages } from './placeholder-images';
 
-const getImage = (imageHint: string) => {
-  const image = PlaceHolderImages.find(img => img.imageHint.includes(imageHint));
-  // Fallback to a random image from the list if the hint is not found
+const getImageByHint = (hint: string): string => {
+  const image = PlaceHolderImages.find(img => img.imageHint === hint);
   if (image) {
     return image.imageUrl;
   }
-  // If no specific image is found, return a random one from the list.
+  // Fallback to a random image
   return PlaceHolderImages[Math.floor(Math.random() * PlaceHolderImages.length)].imageUrl;
-}
+};
+
 
 export const colleges: College[] = [
   { id: 'clg1', name: 'IIT Bombay', lat: 19.1334, lng: 72.9154 },
@@ -26,7 +26,7 @@ export const listings: Listing[] = [
     address: '123, Tech Avenue, Powai, Mumbai',
     price: 15000,
     amenities: ['Wi-Fi', 'AC', 'Laundry', 'Food'],
-    imageUrl: getImage('building exterior'),
+    imageUrl: getImageByHint('building exterior'),
     description: 'A modern and comfortable PG for students with all necessary amenities. Close to major tech parks and colleges.',
     ownerId: 'owner1',
     rating: 4.5,
@@ -40,7 +40,7 @@ export const listings: Listing[] = [
     address: '45, College Road, Nungambakkam, Chennai',
     price: 12000,
     amenities: ['Wi-Fi', 'Food', 'Housekeeping'],
-    imageUrl: getImage('hostel building'),
+    imageUrl: getImageByHint('hostel building'),
     description: 'A quiet and studious environment perfect for scholars. Excellent food and clean rooms.',
     ownerId: 'owner2',
     rating: 4.2,
@@ -54,7 +54,7 @@ export const listings: Listing[] = [
     address: '78, University Street, Delhi',
     price: 13500,
     amenities: ['Wi-Fi', 'AC', 'Gym'],
-    imageUrl: getImage('common area'),
+    imageUrl: getImageByHint('common area'),
     description: 'Located right next to the university campus. Features a fully equipped gym.',
     ownerId: 'owner1',
     rating: 4.8,
@@ -68,7 +68,7 @@ export const listings: Listing[] = [
     address: '90, Vidya Vihar, Pilani',
     price: 10000,
     amenities: ['Wi-Fi', 'Cooler', 'Food'],
-    imageUrl: getImage('apartment exterior'),
+    imageUrl: getImageByHint('apartment exterior'),
     description: 'Affordable and comfortable living for students of BITS Pilani. Homely food included.',
     ownerId: 'owner3',
     rating: 4.0,
@@ -82,7 +82,7 @@ export const listings: Listing[] = [
     address: '21, Powai Lake Rd, Mumbai',
     price: 18000,
     amenities: ['Wi-Fi', 'AC', 'Laundry', 'Food', 'Gym'],
-    imageUrl: getImage('dorm room'),
+    imageUrl: getImageByHint('dorm room'),
     description: 'Premium PG with a view of Powai Lake. Includes access to a modern gym and recreational facilities.',
     ownerId: 'owner2',
     rating: 4.9,
@@ -96,7 +96,7 @@ export const listings: Listing[] = [
     address: '56, Adyar, Chennai',
     price: 11000,
     amenities: ['Wi-Fi', 'Food'],
-    imageUrl: getImage('building facade'),
+    imageUrl: getImageByHint('building facade'),
     description: 'A lively and social PG for students. Great community and regular events.',
     ownerId: 'owner3',
     rating: 4.3,
@@ -110,7 +110,7 @@ export const listings: Listing[] = [
     address: '15, Hauz Khas Village, Delhi',
     price: 16000,
     amenities: ['Wi-Fi', 'AC', 'Housekeeping', 'Social Events'],
-    imageUrl: getImage('hostel interior'),
+    imageUrl: getImageByHint('hostel interior'),
     description: 'A trendy co-living space with a focus on community and events. Perfect for students looking to network.',
     ownerId: 'owner1',
     rating: 4.7,
@@ -133,16 +133,16 @@ export const bookings: Booking[] = [
 ];
 
 export const reviews: Review[] = [
-  { id: 'rev1', listingId: '1', author: 'Aarav Patel', avatarUrl: getImage('person portrait'), rating: 5, comment: 'Amazing place! Very clean and the owner is very helpful. Food is also great.', date: '2024-05-20' },
-  { id: 'rev2', listingId: '1', author: 'Sneha Reddy', avatarUrl: getImage('woman portrait'), rating: 4, comment: 'Good location and amenities. Wi-Fi can be a bit slow at times.', date: '2024-04-15' },
-  { id: 'rev3', listingId: '3', author: 'Vikram Kumar', avatarUrl: getImage('man portrait'), rating: 5, comment: 'Best PG near the campus. The gym is a huge plus!', date: '2024-06-01' },
+  { id: 'rev1', listingId: '1', author: 'Aarav Patel', avatarUrl: getImageByHint('person portrait'), rating: 5, comment: 'Amazing place! Very clean and the owner is very helpful. Food is also great.', date: '2024-05-20' },
+  { id: 'rev2', listingId: '1', author: 'Sneha Reddy', avatarUrl: getImageByHint('woman portrait'), rating: 4, comment: 'Good location and amenities. Wi-Fi can be a bit slow at times.', date: '2024-04-15' },
+  { id: 'rev3', listingId: '3', author: 'Vikram Kumar', avatarUrl: getImageByHint('man portrait'), rating: 5, comment: 'Best PG near the campus. The gym is a huge plus!', date: '2024-06-01' },
 ];
 
 export const conversations: Conversation[] = [
   {
     id: 'conv1',
     userName: 'Kavya Mishra',
-    userAvatar: getImage('woman portrait'),
+    userAvatar: getImageByHint('woman portrait'),
     listingName: 'Ramayan PG',
     lastMessage: 'Is the room still available?',
     lastMessageTimestamp: new Date(new Date().setDate(new Date().getDate() - 1)),
@@ -155,7 +155,7 @@ export const conversations: Conversation[] = [
   {
     id: 'conv2',
     userName: 'Arjun Desai',
-    userAvatar: getImage('man portrait'),
+    userAvatar: getImageByHint('man portrait'),
     listingName: 'Ambarnath PG',
     lastMessage: 'Thank you!',
     lastMessageTimestamp: new Date(new Date().setDate(new Date().getDate() - 2)),
