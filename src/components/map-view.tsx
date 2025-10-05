@@ -12,13 +12,13 @@ type MapViewProps = {
 export default function MapView({ center, listings }: MapViewProps) {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
 
-  if (!apiKey || apiKey === 'YOUR_GOOGLE_MAPS_API_KEY') {
+  if (!apiKey) {
     return (
       <div className="flex items-center justify-center h-full bg-muted">
         <p className="text-center text-muted-foreground p-4">
           Google Maps API Key is not configured.
           <br />
-          Please set NEXT_PUBLIC_GOOGLE_MAPS_API_KEY in your .env.local file.
+          Please add NEXT_PUBLIC_GOOGLE_MAPS_API_KEY to your environment variables.
         </p>
       </div>
     );
