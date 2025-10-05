@@ -3,7 +3,8 @@ import { PlaceHolderImages } from './placeholder-images';
 
 const getImage = (imageHint: string) => {
   const image = PlaceHolderImages.find(img => img.imageHint.includes(imageHint));
-  return image ? image.imageUrl : `https://picsum.photos/seed/${imageHint.split(' ').join('-')}/800/600`;
+  // Fallback to a random image from the list if the hint is not found
+  return image ? image.imageUrl : PlaceHolderImages[Math.floor(Math.random() * PlaceHolderImages.length)].imageUrl;
 }
 
 export const colleges: College[] = [
@@ -20,7 +21,7 @@ export const listings: Listing[] = [
     address: '123, Tech Avenue, Powai, Mumbai',
     price: 15000,
     amenities: ['Wi-Fi', 'AC', 'Laundry', 'Food'],
-    imageUrl: getImage('apartment building'),
+    imageUrl: getImage('student room'),
     description: 'A modern and comfortable PG for students with all necessary amenities. Close to major tech parks and colleges.',
     ownerId: 'owner1',
     rating: 4.5,
@@ -48,7 +49,7 @@ export const listings: Listing[] = [
     address: '78, University Street, Delhi',
     price: 13500,
     amenities: ['Wi-Fi', 'AC', 'Gym'],
-    imageUrl: getImage('apartment exterior'),
+    imageUrl: getImage('common area'),
     description: 'Located right next to the university campus. Features a fully equipped gym.',
     ownerId: 'owner1',
     rating: 4.8,
@@ -62,7 +63,7 @@ export const listings: Listing[] = [
     address: '90, Vidya Vihar, Pilani',
     price: 10000,
     amenities: ['Wi-Fi', 'Cooler', 'Food'],
-    imageUrl: getImage('building exterior'),
+    imageUrl: getImage('apartment exterior'),
     description: 'Affordable and comfortable living for students of BITS Pilani. Homely food included.',
     ownerId: 'owner3',
     rating: 4.0,
@@ -76,7 +77,7 @@ export const listings: Listing[] = [
     address: '21, Powai Lake Rd, Mumbai',
     price: 18000,
     amenities: ['Wi-Fi', 'AC', 'Laundry', 'Food', 'Gym'],
-    imageUrl: getImage('modern building'),
+    imageUrl: getImage('dorm room'),
     description: 'Premium PG with a view of Powai Lake. Includes access to a modern gym and recreational facilities.',
     ownerId: 'owner2',
     rating: 4.9,
@@ -104,7 +105,7 @@ export const listings: Listing[] = [
     address: '15, Hauz Khas Village, Delhi',
     price: 16000,
     amenities: ['Wi-Fi', 'AC', 'Housekeeping', 'Social Events'],
-    imageUrl: getImage('hostel exterior'),
+    imageUrl: getImage('hostel interior'),
     description: 'A trendy co-living space with a focus on community and events. Perfect for students looking to network.',
     ownerId: 'owner1',
     rating: 4.7,

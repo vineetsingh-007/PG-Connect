@@ -3,7 +3,7 @@
     {
       "id": "hero-1",
       "description": "Students studying together in a bright, modern common area.",
-      "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMGxpZmV8ZW58MHx8fHwxNzU5NzA0ODg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMGNvbW1vbiUyMHJvb218ZW58MHx8fHwxNzU5NzEwODgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "students studying"
     },
     {
@@ -26,45 +26,57 @@
     },
     {
       "id": "listing-1",
-      "description": "Exterior of a modern multi-story apartment building.",
-      "imageUrl": "https://images.unsplash.com/photo-1515263487990-61b07816b324?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBidWlsZGluZ3xlbnwwfHx8fDE3NTk3MDQ5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "apartment building"
+      "description": "A clean, simple student room with a bed and study desk.",
+      "imageUrl": "https://images.unsplash.com/photo-1594497943485-3c13f6b48a04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwcm9vbXxlbnwwfHx8fDE3NTk3MTA5NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student room"
     },
     {
       "id": "listing-2",
-      "description": "Exterior of a modern hostel building with balconies.",
-      "imageUrl": "https://images.unsplash.com/photo-1613553423730-e00657584118?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob3N0ZWwlMjBidWlsZGluZ3xlbnwwfHx8fDE3NTk3MDQ5ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Exterior of a residential building suitable for student housing.",
+      "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8fHx8MTc1OTcxMTAxMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hostel building"
     },
     {
       "id": "listing-3",
-      "description": "View of a building with many balconies.",
-      "imageUrl": "https://images.unsplash.com/photo-1580041065738-08595247a329?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBleHRlcmlvcnxlbnwwfHx8fDE3NTk3MDUwMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "apartment exterior"
+      "description": "A common area in a student dormitory with seating.",
+      "imageUrl": "https://images.unsplash.com/photo-1618221528157-37a5955a5b6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb3JtJTIwY29tbW9uJTIwYXJlYXxlbnwwfHx8fDE3NTk3MTEwNTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "common area"
     },
     {
       "id": "listing-4",
-      "description": "Exterior of a residential building.",
-      "imageUrl": "https://images.unsplash.com/photo-1574362845117-1b9764581c98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8fHx8MTc1OTcwNTAzNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "building exterior"
+      "description": "Exterior of a modern apartment building, suitable for a PG.",
+      "imageUrl": "https://images.unsplash.com/photo-1515263487990-61b07816b324?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBidWlsZGluZ3xlbnwwfHx8fDE3NTk3MDQ5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "apartment exterior"
     },
     {
       "id": "listing-5",
-      "description": "A modern building with a glass facade.",
-      "imageUrl": "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBidWlsZGluZ3xlbnwwfHx8fDE3NTk3MDUwNjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "modern building"
+      "description": "A neat and tidy dorm room with a bunk bed and a desk.",
+      "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7FEB511?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb3JtJTIwcm9vbXxlbnwwfHx8fDE3NTk3MTEwOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dorm room"
     },
     {
       "id": "listing-6",
-      "description": "Facade of a brick apartment building.",
-      "imageUrl": "https://images.unsplash.com/photo-1599493356244-a7b64a5157df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWlsZGluZyUyMGZhY2FkZXxlbnwwfHx8fDE3NTk3MDUwOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Facade of a multi-story apartment building in a residential area.",
+      "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWlsZGluZyUyMGZhY2FkZXxlbnwwfHx8fDE3NTk3MDUwOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "building facade"
     },
     {
       "id": "listing-7",
-      "description": "Exterior of a youth hostel.",
-      "imageUrl": "https://images.unsplash.com/photo-1587135304389-38658359753a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob3N0ZWwlMjBleHRlcmlvcnxlbnwwfHx8fDE3NTk3MDUxMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "hostel exterior"
+      "description": "A cozy student living room with a couch and a relaxed atmosphere.",
+      "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwbGl2aW5nJTIwcm9vbXxlbnwwfHx8fDE3NTk3MTExNTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hostel interior"
+    },
+    {
+      "id": "listing-8",
+      "description": "Exterior of a modern building complex suitable for student housing.",
+      "imageUrl": "https://images.unsplash.com/photo-1605283176568-9b41fde36122?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwaG91c2luZyUyMGV4dGVyaW9yfGVufDB8fHx8MTc1OTcxMTE5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "building exterior"
+    },
+    {
+      "id": "listing-9",
+      "description": "A clean room with a single bed and a wardrobe, perfect for a student.",
+      "imageUrl": "https://images.unsplash.com/photo-1616627781431-d85387063a13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaW5nbGUlMjBiZWQlMjByb29tfGVufDB8fHx8MTc1OTcxMTIyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "single room"
     }
   ]
 }

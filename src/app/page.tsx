@@ -105,7 +105,7 @@ export default function Home() {
                     <Image
                       src={listing.imageUrl}
                       alt={listing.name}
-                      data-ai-hint="apartment building"
+                      data-ai-hint="student room"
                       fill
                       className="object-cover"
                     />

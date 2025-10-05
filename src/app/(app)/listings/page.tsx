@@ -31,7 +31,7 @@ export default function ListingsPage() {
                 alt={listing.name}
                 fill
                 className="object-cover"
-                data-ai-hint="apartment exterior"
+                data-ai-hint="hostel building"
               />
                <Badge className="absolute top-2 right-2 flex items-center gap-1">
                 <Star className="h-3 w-3" />

@@ -60,7 +60,7 @@ export default function ListingDetailPage() {
           alt={listing.name}
           fill
           className="object-cover"
-          data-ai-hint="apartment building"
+          data-ai-hint="hostel interior"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
