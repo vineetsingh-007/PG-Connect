@@ -10,7 +10,7 @@ export const colleges: College[] = [
 export const listings: Listing[] = [
   {
     id: '1',
-    name: 'Sunshine Student PG',
+    name: 'Ramayan PG',
     address: '123, Tech Avenue, Powai, Mumbai',
     price: 15000,
     amenities: ['Wi-Fi', 'AC', 'Laundry', 'Food'],
@@ -24,7 +24,7 @@ export const listings: Listing[] = [
   },
   {
     id: '2',
-    name: 'Scholars Abode',
+    name: 'Ganesh PG',
     address: '45, College Road, Nungambakkam, Chennai',
     price: 12000,
     amenities: ['Wi-Fi', 'Food', 'Housekeeping'],
@@ -38,7 +38,7 @@ export const listings: Listing[] = [
   },
   {
     id: '3',
-    name: 'Campus Corner',
+    name: 'Ambarnath PG',
     address: '78, University Street, Delhi',
     price: 13500,
     amenities: ['Wi-Fi', 'AC', 'Gym'],
@@ -52,7 +52,7 @@ export const listings: Listing[] = [
   },
   {
     id: '4',
-    name: 'Pilani Nivas',
+    name: 'Luxary PG',
     address: '90, Vidya Vihar, Pilani',
     price: 10000,
     amenities: ['Wi-Fi', 'Cooler', 'Food'],
@@ -66,7 +66,7 @@ export const listings: Listing[] = [
   },
   {
     id: '5',
-    name: 'Lakeview Hostel',
+    name: 'Chintamani PG',
     address: '21, Powai Lake Rd, Mumbai',
     price: 18000,
     amenities: ['Wi-Fi', 'AC', 'Laundry', 'Food', 'Gym'],
@@ -80,7 +80,7 @@ export const listings: Listing[] = [
   },
   {
     id: '6',
-    name: 'The Student Hub',
+    name: 'Atlantis PG',
     address: '56, Adyar, Chennai',
     price: 11000,
     amenities: ['Wi-Fi', 'Food'],
@@ -117,11 +117,11 @@ export const conversations: Conversation[] = [
     id: 'conv1',
     userName: 'Kavya Mishra',
     userAvatar: 'https://picsum.photos/seed/conv1/40/40',
-    listingName: 'Sunshine Student PG',
+    listingName: 'Ramayan PG',
     lastMessage: 'Is the room still available?',
     lastMessageTimestamp: new Date(new Date().setDate(new Date().getDate() - 1)),
     messages: [
-      { id: 'm1', text: 'Hello, I am interested in the single room at Sunshine Student PG.', sender: 'user', timestamp: new Date(new Date().setDate(new Date().getDate() - 1)) },
+      { id: 'm1', text: 'Hello, I am interested in the single room at Ramayan PG.', sender: 'user', timestamp: new Date(new Date().setDate(new Date().getDate() - 1)) },
       { id: 'm2', text: 'Hi Kavya, which room are you referring to?', sender: 'owner', timestamp: new Date(new Date().setDate(new Date().getDate() - 1)) },
       { id: 'm3', text: 'The one listed for 15,000. Is it still available for booking?', sender: 'user', timestamp: new Date(new Date().setDate(new Date().getDate() - 1)) },
     ],
@@ -130,7 +130,7 @@ export const conversations: Conversation[] = [
     id: 'conv2',
     userName: 'Arjun Desai',
     userAvatar: 'https://picsum.photos/seed/conv2/40/40',
-    listingName: 'Campus Corner',
+    listingName: 'Ambarnath PG',
     lastMessage: 'Thank you!',
     lastMessageTimestamp: new Date(new Date().setDate(new Date().getDate() - 2)),
     messages: [
