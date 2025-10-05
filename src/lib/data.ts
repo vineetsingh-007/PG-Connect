@@ -3,7 +3,7 @@ import { PlaceHolderImages } from './placeholder-images';
 
 const getImage = (imageHint: string) => {
   const image = PlaceHolderImages.find(img => img.imageHint.includes(imageHint));
-  return image ? image.imageUrl : 'https://picsum.photos/seed/placeholder/800/600';
+  return image ? image.imageUrl : `https://picsum.photos/seed/${imageHint.split(' ').join('-')}/800/600`;
 }
 
 export const colleges: College[] = [
