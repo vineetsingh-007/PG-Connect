@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { notFound } from 'next/navigation';
+import { notFound, useParams } from 'next/navigation';
 import { useState } from 'react';
 import { listings, rooms as allRooms, reviews as allReviews } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -31,10 +31,13 @@ const amenityIcons: { [key: string]: React.ElementType } = {
 };
 
 
-export default function ListingDetailPage({ params }: { params: { id: string } }) {
-  const listing = listings.find((l) => l.id === params.id);
-  const rooms = allRooms.filter((r) => r.listingId === params.id);
-  const reviews = allReviews.filter((r) => r.listingId === params.id);
+export default function ListingDetailPage() {
+  const params = useParams();
+  const id = params.id as string;
+
+  const listing = listings.find((l) => l.id === id);
+  const rooms = allRooms.filter((r) => r.listingId === id);
+  const reviews = allReviews.filter((r) => r.listingId === id);
 
   const [selectedRoom, setSelectedRoom] = useState<Room | null>(rooms.length > 0 ? rooms[0] : null);
   const [date, setDate] = useState<Date | undefined>(new Date());
