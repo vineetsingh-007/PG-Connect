@@ -12,12 +12,15 @@ import MapView from '@/components/map-view';
 import type { Listing } from '@/lib/types';
 import Logo from '@/components/logo';
 import Link from 'next/link';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCollege, setSelectedCollege] = useState<College | null>(null);
   const [filteredListings, setFilteredListings] = useState<Listing[]>(listings);
   const [mapCenter, setMapCenter] = useState({ lat: 20.5937, lng: 78.9629 }); // Default to India center
+
+  const heroImage = PlaceHolderImages.find(img => img.imageHint.includes('students studying'))?.imageUrl || "https://picsum.photos/seed/students-hero/1800/1200";
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -47,7 +50,7 @@ export default function Home() {
       <main className="flex-1">
         <section className="relative h-[60vh] flex items-center justify-center text-center text-white">
           <Image
-            src="https://picsum.photos/seed/students-hero/1800/1200"
+            src={heroImage}
             alt="Students studying together"
             data-ai-hint="students studying"
             fill

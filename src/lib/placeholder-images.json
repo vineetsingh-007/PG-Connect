@@ -3,50 +3,68 @@
     {
       "id": "hero-1",
       "description": "Students studying together in a bright, modern common area.",
-      "imageUrl": "https://images.unsplash.com/photo-1721702754494-fdd7189f946c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdHVkZW50cyUyMHN0dWR5aW5nfGVufDB8fHx8MTc1OTYzNTE5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMGxpZmV8ZW58MHx8fHwxNzU5NzA0ODg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "students studying"
     },
     {
       "id": "user-avatar-1",
       "description": "Avatar for a user profile.",
-      "imageUrl": "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk2MjQ1ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk2MjQ1ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
+    },
+    {
+      "id": "user-avatar-2",
+      "description": "Avatar for a female user profile.",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk2MjQ1ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "user-avatar-3",
+      "description": "Avatar for a male user profile.",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk2MjQ1ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
     },
     {
       "id": "listing-1",
       "description": "Exterior of a modern multi-story apartment building.",
-      "imageUrl": "https://images.unsplash.com/photo-1594484208280-efa00f96fc21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcGFydG1lbnQlMjBidWlsZGluZ3xlbnwwfHx8fDE3NTk2MjUzOTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1515263487990-61b07816b324?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBidWlsZGluZ3xlbnwwfHx8fDE3NTk3MDQ5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "apartment building"
     },
     {
       "id": "listing-2",
-      "description": "Bright and clean student dormitory room with two beds.",
-      "imageUrl": "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiZWRyb29tJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU5NTg4NTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bedroom interior"
+      "description": "Exterior of a modern hostel building with balconies.",
+      "imageUrl": "https://images.unsplash.com/photo-1613553423730-e00657584118?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob3N0ZWwlMjBidWlsZGluZ3xlbnwwfHx8fDE3NTk3MDQ5ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hostel building"
     },
     {
       "id": "listing-3",
-      "description": "Shared kitchen space in a student accommodation.",
-      "imageUrl": "https://images.unsplash.com/photo-1610177534644-34d881503b83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb2Rlcm4lMjBraXRjaGVufGVufDB8fHx8MTc1OTU4NjA4MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "modern kitchen"
+      "description": "View of a building with many balconies.",
+      "imageUrl": "https://images.unsplash.com/photo-1580041065738-08595247a329?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBleHRlcmlvcnxlbnwwfHx8fDE3NTk3MDUwMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "apartment exterior"
     },
     {
       "id": "listing-4",
-      "description": "Common area with sofas and a coffee table for students.",
-      "imageUrl": "https://images.unsplash.com/photo-1605774337664-7a846e9cdf17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsaXZpbmclMjByb29tfGVufDB8fHx8MTc1OTU3NTk4MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "living room"
+      "description": "Exterior of a residential building.",
+      "imageUrl": "https://images.unsplash.com/photo-1574362845117-1b9764581c98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8fHx8MTc1OTcwNTAzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "building exterior"
     },
     {
       "id": "listing-5",
-      "description": "Student working at a desk in their room.",
-      "imageUrl": "https://images.unsplash.com/photo-1654366698665-e6d611a9aaa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdHVkZW50JTIwZGVza3xlbnwwfHx8fDE3NTk1OTc4ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "student desk"
+      "description": "A modern building with a glass facade.",
+      "imageUrl": "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBidWlsZGluZ3xlbnwwfHx8fDE3NTk3MDUwNjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern building"
     },
     {
       "id": "listing-6",
-      "description": "View of a building with many balconies.",
-      "imageUrl": "https://images.unsplash.com/photo-1676065701219-3c0c64a4eba5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhcGFydG1lbnQlMjBleHRlcmlvcnxlbnwwfHx8fDE3NTk2MDUxNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "apartment exterior"
+      "description": "Facade of a brick apartment building.",
+      "imageUrl": "https://images.unsplash.com/photo-1599493356244-a7b64a5157df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWlsZGluZyUyMGZhY2FkZXxlbnwwfHx8fDE3NTk3MDUwOTB8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "building facade"
+    },
+    {
+      "id": "listing-7",
+      "description": "Exterior of a youth hostel.",
+      "imageUrl": "https://images.unsplash.com/photo-1587135304389-38658359753a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob3N0ZWwlMjBleHRlcmlvcnxlbnwwfHx8fDE3NTk3MDUxMTB8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "hostel exterior"
     }
   ]
 }

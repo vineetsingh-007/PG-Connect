@@ -10,14 +10,17 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { CreditCard, LogOut, Settings, User } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function UserNav() {
+  const userAvatar = PlaceHolderImages.find(img => img.imageHint.includes('person portrait'))?.imageUrl || "https://picsum.photos/seed/user-avatar/40/40";
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" className="relative h-9 w-9 rounded-full">
           <Avatar className="h-9 w-9 border-2 border-primary/50">
-            <AvatarImage src="https://picsum.photos/seed/user-avatar/40/40" data-ai-hint="person portrait" alt="User Avatar" />
+            <AvatarImage src={userAvatar} data-ai-hint="person portrait" alt="User Avatar" />
             <AvatarFallback>U</AvatarFallback>
           </Avatar>
         </Button>
