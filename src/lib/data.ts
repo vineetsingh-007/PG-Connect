@@ -12,6 +12,7 @@ export const colleges: College[] = [
   { id: 'clg2', name: 'Delhi University', lat: 28.686273, lng: 77.221085 },
   { id: 'clg3', name: 'IIT Madras', lat: 12.9915, lng: 80.2335 },
   { id: 'clg4', name: 'BITS Pilani', lat: 28.3588, lng: 75.5873 },
+  { id: 'clg5', name: 'MIT-ADT', lat: 18.4614, lng: 73.9482 },
 ];
 
 export const listings: Listing[] = [
