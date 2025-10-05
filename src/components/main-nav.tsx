@@ -30,16 +30,17 @@ export function MainNav() {
     <SidebarMenu className="p-2">
       {menuItems.map((item) => (
         <SidebarMenuItem key={item.label}>
-          <Link href={item.href} passHref legacyBehavior>
-            <SidebarMenuButton
-              isActive={pathname === item.href || (item.href !== '/dashboard' && pathname.startsWith(item.href))}
-              tooltip={{ children: item.label, side: 'right', align: 'center' }}
-              className="justify-start"
-            >
+          <SidebarMenuButton
+            asChild
+            isActive={pathname === item.href || (item.href !== '/dashboard' && pathname.startsWith(item.href))}
+            tooltip={{ children: item.label, side: 'right', align: 'center' }}
+            className="justify-start"
+          >
+            <Link href={item.href}>
               <item.icon className="shrink-0" />
               <span className="truncate">{item.label}</span>
-            </SidebarMenuButton>
-          </Link>
+            </Link>
+          </SidebarMenuButton>
         </SidebarMenuItem>
       ))}
     </SidebarMenu>
