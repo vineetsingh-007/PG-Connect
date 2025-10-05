@@ -14,7 +14,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 const StatCard = ({ title, value, icon: Icon, change, changeType }: { title: string, value: string, icon: React.ElementType, change?: string, changeType?: 'increase' | 'decrease' }) => (
-  <Card className="shadow-sm hover:shadow-md transition-shadow">
+  <Card className="shadow-sm hover:shadow-md transition-shadow bg-card/80 backdrop-blur-sm">
     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
       <CardTitle className="text-sm font-medium">{title}</CardTitle>
       <Icon className="h-5 w-5 text-muted-foreground" />

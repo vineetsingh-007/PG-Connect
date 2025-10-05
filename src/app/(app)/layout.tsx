@@ -7,7 +7,7 @@ import { UserNav } from '@/components/user-nav';
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
     <SidebarProvider>
-        <Sidebar collapsible="icon" className="border-r">
+        <Sidebar collapsible="icon" className="border-r bg-background/80 backdrop-blur-lg">
           <SidebarContent>
             <SidebarHeader className="p-2">
               <Logo />

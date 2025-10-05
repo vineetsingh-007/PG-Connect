@@ -59,7 +59,7 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 flex flex-col items-center px-4">
-            <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg">
+            <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg shadow-text">
               Find Your Home Away From Home
             </h1>
             <p className="mt-4 max-w-2xl text-lg md:text-xl text-gray-200 drop-shadow-md">
@@ -67,14 +67,14 @@ export default function Home() {
             </p>
             <form
               onSubmit={handleSearch}
-              className="mt-8 w-full max-w-2xl flex flex-col sm:flex-row items-center gap-2 bg-white/10 backdrop-blur-md p-3 rounded-xl border border-white/20 shadow-lg"
+              className="mt-8 w-full max-w-2xl flex flex-col sm:flex-row items-center gap-2 bg-white/20 backdrop-blur-md p-3 rounded-xl border border-white/20 shadow-lg"
             >
               <div className="w-full sm:w-auto flex-grow flex items-center relative">
                 <MapPin className="absolute left-3 h-5 w-5 text-gray-300" />
                 <Input
                   type="text"
                   placeholder="Enter a college name..."
-                  className="w-full bg-white/20 border-0 text-white placeholder:text-gray-300 pl-10 h-12 text-base focus-visible:ring-primary focus-visible:ring-offset-0"
+                  className="w-full bg-transparent border-0 text-white placeholder:text-gray-300 pl-10 h-12 text-base focus-visible:ring-primary focus-visible:ring-offset-0"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   list="colleges-datalist"
