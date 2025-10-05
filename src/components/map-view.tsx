@@ -12,7 +12,7 @@ type MapViewProps = {
 export default function MapView({ center, listings }: MapViewProps) {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
 
-  if (!apiKey) {
+  if (!apiKey || apiKey === 'YOUR_GOOGLE_MAPS_API_KEY') {
     return (
       <div className="flex items-center justify-center h-full bg-muted">
         <p className="text-center text-muted-foreground p-4">
