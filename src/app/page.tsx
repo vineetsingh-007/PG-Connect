@@ -43,19 +43,19 @@ export default function Home() {
       <header className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between p-4 bg-transparent">
         <Logo />
         <div className="flex items-center gap-4">
-          <Button variant="ghost" className="text-white transform transition-transform duration-150 ease-in-out active:scale-95 active:brightness-90" asChild>
+          <Button variant="ghost" className="text-white transform transition duration-150 ease-in-out active:scale-95 active:brightness-90" asChild>
             <Link href="/dashboard">
               <LayoutDashboard className="mr-2 h-4 w-4" />
               Dashboard
             </Link>
           </Button>
-          <Button variant="ghost" className="text-white transform transition-transform duration-150 ease-in-out active:scale-95 active:brightness-90" asChild>
+          <Button variant="ghost" className="text-white transform transition duration-150 ease-in-out active:scale-95 active:brightness-90" asChild>
             <Link href="/login">
               <LogIn className="mr-2 h-4 w-4" />
               Login
             </Link>
           </Button>
-          <Button asChild className="transform transition-transform duration-150 ease-in-out active:scale-95 active:brightness-90">
+          <Button asChild className="transform transition duration-150 ease-in-out active:scale-95 active:brightness-90">
             <Link href="/signup">
               <UserPlus className="mr-2 h-4 w-4" />
               Sign Up
