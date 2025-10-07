@@ -33,6 +33,8 @@ import { Calendar as CalendarIcon, Loader2, Home } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { format } from 'date-fns';
 import { useToast } from '@/hooks/use-toast';
+import { listings } from '@/lib/data';
+import type { Listing } from '@/lib/types';
 
 const listingFormSchema = z.object({
   name: z.string().min(3, { message: 'PG name must be at least 3 characters.' }),
@@ -65,10 +67,27 @@ export default function NewListingPage() {
 
   async function onSubmit(data: ListingFormValues) {
     setIsLoading(true);
-    console.log(data);
-
+    
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1500));
+    
+    const newListing: Listing = {
+      id: `listing-${Date.now()}`,
+      name: data.name,
+      address: data.location,
+      price: data.price,
+      imageUrl: data.imageUrl,
+      amenities: ['Wi-Fi', 'Food', 'Housekeeping'], // Default amenities for new listing
+      description: 'A newly added PG listing.',
+      ownerId: 'owner-new',
+      rating: 4.0, // Default rating
+      lat: 20.5937, // Default coordinates, ideally get from location
+      lng: 78.9629,
+    };
+
+    // This adds the new listing to the in-memory array.
+    // In a real app, this would be an API call to a database.
+    listings.unshift(newListing);
 
     setIsLoading(false);
     toast({

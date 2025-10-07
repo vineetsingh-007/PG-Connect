@@ -1,13 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { MapPin, Search, LogIn, UserPlus, LayoutDashboard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { colleges, listings, College } from '@/lib/data';
+import { colleges, listings as initialListings, College } from '@/lib/data';
 import MapView from '@/components/map-view';
 import type { Listing } from '@/lib/types';
 import Logo from '@/components/logo';
@@ -17,10 +17,18 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCollege, setSelectedCollege] = useState<College | null>(null);
+  const [listings, setListings] = useState<Listing[]>(initialListings);
   const [filteredListings, setFilteredListings] = useState<Listing[]>(listings);
   const [mapCenter, setMapCenter] = useState({ lat: 20.5937, lng: 78.9629 }); // Default to India center
 
   const heroImage = PlaceHolderImages.find(img => img.imageHint.includes('students studying'))?.imageUrl || "https://picsum.photos/seed/students-hero/1800/1200";
+
+  // This will refresh listings if they are updated elsewhere (e.g. new listing page)
+  // This is a simple client-side solution. A real app would use a proper state management library.
+  useEffect(() => {
+    setListings(initialListings);
+    setFilteredListings(initialListings);
+  }, []);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
