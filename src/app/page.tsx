@@ -163,7 +163,10 @@ export default function Home() {
         </div>
       </main>
       <footer className="p-4 text-center border-t text-muted-foreground text-sm">
-        <p>&copy; {new Date().getFullYear()} PG Connect. All rights reserved.</p>
+        <p className="space-x-4">
+          <span>&copy; {new Date().getFullYear()} PG Connect. All rights reserved.</span>
+          <Link href="/about-us" className="hover:text-primary transition-colors">About Us</Link>
+        </p>
       </footer>
     </div>
   );
